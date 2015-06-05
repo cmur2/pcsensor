@@ -479,7 +479,8 @@ int main( int argc, char **argv) {
      usb_release_interface(lvr_winusb, INTERFACE1);
      usb_release_interface(lvr_winusb, INTERFACE2);
      
-     usb_close(lvr_winusb); 
+     //usb_close(lvr_winusb);
+     usb_reset(lvr_winusb);
       
      return 0; 
 }
